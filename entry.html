@@ -1,9 +1,7 @@
 {{> header}}
 
-  
 {{! Image zoom plugin depends on .entry selector}}
 {{#entry}}
-
 
   <div style="min-height:6rem;flex-direction:row;align-items:center" class="flex mt3 pt3 mb5 ">
     <div class="w-100">
@@ -21,7 +19,6 @@
 
   <div class="entry pv0  w-80 b--black-10" >
     
-
     <div class="measure-wide lh-copy f5 black-90" style="position:relative">
     {{{body}}}
     </div>
@@ -36,7 +33,6 @@
 
 {{> pluginHTML}}
 
-
 <div class="cf mt6"></div>
 
 <div class="w-50 fl pr4">
@@ -50,7 +46,7 @@
   {{#previous.thumbnail.medium}}
   <span class="db" style="outline: 1px solid rgba(0,0,0,.12);
     outline-offset: -1px;max-height:14rem;overflow:hidden">
-    <img style="width:100%" src="{{{url}}}">
+    <img style="width:100%" src="{{{url}}}" loading="lazy" decoding="async" alt="{{title}}">
    </span>
   </span>
   {{/previous.thumbnail.medium}}
@@ -70,7 +66,7 @@
   {{#next.thumbnail.medium}}
   <span class="db" style="outline: 1px solid rgba(0,0,0,.12);
     outline-offset: -1px;max-height:14rem;overflow:hidden">
-    <img style="width:100%" src="{{{url}}}">
+    <img style="width:100%" src="{{{url}}}" loading="lazy" decoding="async" alt="{{title}}">
    </span>
   </span>
   {{/next.thumbnail.medium}}
@@ -85,7 +81,6 @@
 {{/next}}
 {{/entry}}
 </div>
-  
   
 <div class="w-50 fr pl2 f6 clip-10 lh-title">
   <span class="db  bt b--black-10 black-50 pv3">Latest posts</span>
@@ -104,7 +99,6 @@
 {{/recent_entries}}
 </div>
 {{/entry.page}}
-
 
 <div class="cf"></div>
 

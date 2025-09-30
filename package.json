@@ -1,0 +1,54 @@
+{
+  "description": "",
+  "cloneFrom": "SITE:magazine",
+  "thumb": "",
+  "localEditing": false,
+  "locals": {
+    "accent_color": "#0078D9",
+    "background_color": "#fff",
+    "text_color": "#000",
+    "page_size": 20,
+    "hide_dates": false,
+    "date_display": "MMMM D, Y",
+    "relative_dates": false,
+    "syntax_highlighter": {
+      "name": "Stackoverflow Light",
+      "id": "stackoverflow-light",
+      "tags": [
+        "light"
+      ],
+      "styles": ".hljs{color:#2f3337;background:#f6f6f6}.hljs-subst{color:#2f3337}.hljs-comment{color:#656e77}.hljs-attr,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-section,.hljs-selector-tag{color:#015692}.hljs-attribute{color:#803378}.hljs-name,.hljs-number,.hljs-quote,.hljs-selector-id,.hljs-template-tag,.hljs-type{color:#b75501}.hljs-selector-class{color:#015692}.hljs-link,.hljs-regexp,.hljs-selector-attr,.hljs-string,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#54790d}.hljs-meta,.hljs-selector-pseudo{color:#015692}.hljs-built_in,.hljs-literal,.hljs-title{color:#b75501}.hljs-bullet,.hljs-code{color:#535a60}.hljs-meta .hljs-string{color:#54790d}.hljs-deletion{color:#c02d2e}.hljs-addition{color:#2f6f44}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}pre code.hljs{display:block;overflow:auto;padding:1em;margin:1em 0;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.hljs,code.hljs{padding:0;margin:0}",
+      "background": "#f6f6f6",
+      "colors": [
+        "#2f3337",
+        "#656e77",
+        "#015692",
+        "#803378",
+        "#b75501",
+        "#54790d",
+        "#535a60",
+        "#c02d2e",
+        "#2f6f44"
+      ]
+    },
+    "body_font": {
+      "name": "System sans-serif",
+      "id": "system-sans",
+      "stack": "-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif",
+      "tags": [
+        "sans"
+      ],
+      "line_height": 1.4,
+      "line_width": 38,
+      "font_size": 16,
+      "styles": ""
+    }
+  },
+  "name": "Copy of Magazine 2",
+  "shareID": "",
+  "slug": "copy-of-magazine-2",
+  "id": "blog_8b0a23dc03d84943adf8be09b08014a6:copy-of-magazine-2",
+  "previewPath": "/",
+  "isPublic": false,
+  "owner": "blog_8b0a23dc03d84943adf8be09b08014a6"
+}

@@ -1,3 +1,93 @@
+/* ===== CROSS-BROWSER COMPATIBILITY & IMAGE OPTIMIZATION ===== */
+
+/* Modern CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensure images work consistently across browsers */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Prevent layout shift during image loading */
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Featured images on homepage - ensure consistent sizing */
+.featured-entry img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Entry page images - consistent spacing and sizing */
+.entry img {
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* Thumbnail consistency across all components */
+img[src*="thumbnail"] {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image zoom plugin enhancement */
+.entry img {
+  cursor: zoom-in;
+  transition: opacity 0.2s ease;
+}
+
+.entry img:hover {
+  opacity: 0.9;
+}
+
+/* Fix for images in figure tags */
+figure img {
+  margin: 0 auto;
+}
+
+/* Smooth scrolling for supported browsers */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Fix outline styles across browsers */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Fix flexbox issues in older browsers */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Mobile performance optimization */
+@media (max-width: 800px) {
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== END COMPATIBILITY & IMAGE FIXES ===== */
+
+
 {{{coding_font.styles}}}
 {{{body_font.styles}}}
 {{{syntax_highlighter.styles}}}
@@ -413,3 +503,4 @@ h3.f6 {line-height:1.25;}
     padding:0
   }
 }
+

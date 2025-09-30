@@ -4,9 +4,16 @@
 
     <title>{{> title}}</title>
     <meta name="description" content="{{> description}}">
-    <script defer data-domain="hhalvi.com" src="http://139.99.124.239:8190/js/script.js"></script>
 
-    <!-- Begin proprietary meta tags for sharing on social media -->
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="{{{blogURL}}}">
+    <link rel="dns-prefetch" href="{{{blogURL}}}">
+    <link rel="dns-prefetch" href="https://static.cloudflareinsights.com">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="{{#asset}}/css-theme.css{{/asset}}" as="style">
+    
+    <!-- Social Media Meta Tags -->
     <meta property="og:title" content="{{> title}}">
     <meta property="og:description" content="{{> description}}">
     <meta property="og:type" content="website">
@@ -17,9 +24,13 @@
     {{/thumbnail.large}}
     <meta property="og:url" content="{{{absoluteURL}}}">
     {{/entry}}
-    <!-- End proprietary meta tags for sharing on social media -->
-     
+    
+    <!-- RSS Feed -->
     <link rel="alternate" type="application/rss+xml" title="{{title}}" href="{{{blogURL}}}{{{feedURL}}}">
+    
+    <!-- Favicon -->
     {{#avatar}}<link rel="icon" href="{{{avatar}}}" type="image/x-icon">{{/avatar}}
+    
+    <!-- Theme CSS -->
     <link rel="stylesheet" href="{{#asset}}/css-theme.css{{/asset}}">
 </head>
